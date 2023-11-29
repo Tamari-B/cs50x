@@ -1,0 +1,43 @@
+sort1 uses: Bubble Sort
+How do you know?:
+
+(Explanation)
+
+-- Bubble Sort and Selection Sort have a time complexity of O(n^2), Merge sort has a time complexity of O(n log n). That proves Merge sort is more efficient than Selection and Bubble sort for large data sets. So, I've decided to check all three programs for an extensive list.
+-- Considering the principle of the Merge sort algorithm (it divides the given list into smaller lists, then sorts each smaller list, and finally merges them back in a sorted manner),we can say it is faster than the other two. This fact is better confirmed by checking a randomly generated extensive list.
+-- In our case, I've chosen the random50000.txt file, and tested all three programs. The result was as follows: sort1 - 0m8.102s, sort2 - 0m1.047s, sort3 - 0m4.641s.
+-- As we see, sort1 is the fastest, now, I can be sure sort2 is a Merge sort algorithm.
+
+
+-- Bubble Sort and Selection Sort have the same time complexity but a different principle of action. Selection sort works by repeatedly finding the minimum element from the unsorted portion of the list and swapping it with the element at the current position, while Bubble sort, on the other hand, compares and swaps adjacent elements until the largest element reaches its correct position. So, Bubble Sort is faster in finding out whether the list is already sorted and is slower in sorting reversed lists than Selection Sort.
+
+-- To get correct answers, I have tested the sort1 and sor3 algorithms on three different sizes of sorted lists and a largest-sized reversed list. Here are the results:
+
+-- sort1
+   - 0.024s for sorted5000 (--> Sorted list of 5000 elements and so on)
+   - 0.046s for sorted10000
+   - 1.089s for sorted50000
+
+   - 5.431s for reversed50000 (--> Reversed sorted list of  50000 elements)
+
+-- sort3
+   - 0.039s for sorted 5000
+   - 0.108s for sorted 10000
+   - 3.087s for sorted 50000
+
+   - 3.143s for reversed50000
+
+-- These results show the performance speed of the sort1 algorithm is faster than sort3 when we have sorted lists. Also, sorting the reversed list took more time in the case of sort1 than sort3, these facts prove that sort1 is Bubble Sort and sort3 is Selection Sort.
+
+sort2 uses: Merge Sort
+How do you know?:
+
+Read the explanation from line 6 to line 10..
+
+
+sort3 uses: Selection Sort
+How do you know?:
+
+Read the explanation..
+
+
